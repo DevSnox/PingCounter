@@ -1,6 +1,6 @@
 name: PingCounter
 author: DevSnox
-version: 1.0
+version: "1.0-RELEASE"
 main: me.devsnox.pingcounter.PingCounter
 commands:
   pingcounter:
