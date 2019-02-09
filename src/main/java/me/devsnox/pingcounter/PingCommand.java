@@ -20,9 +20,9 @@ public class PingCommand implements CommandExecutor {
         int totalPings = 0;
         int uniquePings = 0;
 
-        for(Map.Entry<InetAddress, Integer> entry : pingCounter.getPings().entrySet()) {
+        for(Collection<Integer> value : pingCounter.getPings().values()) {
             uniquePings++;
-            totalPings = totalPings + entry.getValue();
+            totalPings += value;
         }
 
         sender.sendMessage("§bUnique pings§8: §a" + uniquePings + " §bTotal pings§8: §a" + totalPings);
