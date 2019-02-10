@@ -35,13 +35,7 @@ public class BasicPingStats implements PingStats {
 
     @Override
     public int getUniquePings() {
-        int uniquePings = 0;
-
-        for (final Integer ignored : this.engine.getPings().values()) {
-            uniquePings++;
-        }
-
-        return uniquePings;
+        return this.engine.getPings().size;
     }
 
     @Override
