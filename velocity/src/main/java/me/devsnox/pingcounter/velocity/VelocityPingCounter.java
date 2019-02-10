@@ -24,15 +24,11 @@ import org.slf4j.Logger;
 )
 public class VelocityPingCounter {
 
-    private final ProxyServer proxyServer;
-    private final PingCounter pingCounter;
-
     @Inject
     public VelocityPingCounter(final ProxyServer proxyServer, final Logger logger) {
-        this.proxyServer = proxyServer;
-        this.pingCounter = new BasicPingCounter();
+        final PingCounter pingCounter = new BasicPingCounter();
 
-        this.proxyServer.getCommandManager().register(new PingCommand(this.pingCounter.getStats()));
-        this.proxyServer.getEventManager().register(this, new PingListener(this.pingCounter.getEngine()));
+        proxyServer.getCommandManager().register(new PingCommand(pingCounter.getStats()));
+        proxyServer.getEventManager().register(this, new PingListener(pingCounter.getEngine()));
     }
 }
