@@ -16,6 +16,7 @@ import me.devsnox.pingcounter.core.impl.BasicPingCounter
  * Mail: me.devsnox@gmail.com
  * Discord: DevSnox#4884 | Skype: live:chaos3729
  */
+@Suppress("unused")
 @Plugin(
 		id = "pingcounter",
 		name = "PingCounter",
@@ -23,7 +24,6 @@ import me.devsnox.pingcounter.core.impl.BasicPingCounter
 		description = "PingCounter counts all incoming pings from the serverlist.",
 		authors = ["DevSnox", "Lars Artmann | LartyHD"]
 )
-
 class VelocityPingCounter @Inject private constructor(
 		private val commandManager: CommandManager,
 		private val eventManager: EventManager
@@ -39,6 +39,7 @@ class VelocityPingCounter @Inject private constructor(
 	 *
 	 * Current Version: 1.0 (10.02.2019 - 10.02.2019)
 	 */
+	@Suppress("UNUSED_PARAMETER")
 	@Subscribe
 	fun on(event: ProxyInitializeEvent): Unit = BasicPingCounter().run {
 		commandManager.register(PingCommand(stats))

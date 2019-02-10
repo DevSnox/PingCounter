@@ -41,4 +41,9 @@
             </plugin>
         </plugins>
     </build>
+
+    <properties>
+        <kotlin.code.style>official</kotlin.code.style>
+    </properties>
+
 </project>
