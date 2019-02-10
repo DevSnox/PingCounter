@@ -3,6 +3,8 @@ package me.devsnox.pingcounter.core.impl;
 import me.devsnox.pingcounter.core.api.PingStats;
 
 import java.util.concurrent.TimeUnit;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  * Created by DevSnox on 12.02.18
@@ -53,6 +55,10 @@ public class BasicPingStats implements PingStats {
     }
 
     private float averagePingPerTimeUnit(final int pings, final TimeUnit timeUnit) {
+        if (TimeUnit.MINUTES.convert((System.currentTimeMillis() - this.engine.getStartTime()), TimeUnit.MILLISECONDS) == 0) {
+            Logger.getLogger("minecraft").log(Level.WARNING, "Please wait some seconds, the system is still collecting data (max. 60 seconds)");
+            return 0;
+        }
         return pings / timeUnit.convert((System.currentTimeMillis() - this.engine.getStartTime()), TimeUnit.MILLISECONDS);
     }
 }
