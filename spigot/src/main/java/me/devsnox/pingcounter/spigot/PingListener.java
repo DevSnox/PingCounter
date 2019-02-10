@@ -1,4 +1,4 @@
-package me.devsnox.pingcounter;
+package me.devsnox.pingcounter.spigot;
 
 import me.devsnox.pingcounter.core.api.CounterEngine;
 import org.bukkit.event.EventHandler;
