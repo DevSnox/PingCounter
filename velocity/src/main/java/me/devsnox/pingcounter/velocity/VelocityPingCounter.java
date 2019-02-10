@@ -1,12 +1,11 @@
 package me.devsnox.pingcounter.velocity;
 
+import com.google.inject.Inject;
 import com.velocitypowered.api.plugin.Plugin;
 import com.velocitypowered.api.proxy.ProxyServer;
 import me.devsnox.pingcounter.core.api.PingCounter;
 import me.devsnox.pingcounter.core.impl.BasicPingCounter;
 import org.slf4j.Logger;
-
-import javax.inject.Inject;
 
 /**
  * Created by DevSnox on 12.02.18
