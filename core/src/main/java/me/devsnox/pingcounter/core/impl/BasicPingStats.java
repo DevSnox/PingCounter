@@ -18,7 +18,7 @@ public class BasicPingStats implements PingStats {
 
     private final BasicCounterEngine engine;
 
-    public BasicPingStats(final BasicCounterEngine engine) {
+    BasicPingStats(final BasicCounterEngine engine) {
         this.engine = engine;
     }
 
