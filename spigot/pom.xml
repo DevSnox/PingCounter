@@ -18,6 +18,11 @@
             <artifactId>pingcounter.core</artifactId>
             <version>1.2-SNAPSHOT</version>
         </dependency>
+        <dependency>
+            <groupId>org.github.paperspigot</groupId>
+            <artifactId>paperspigot-api</artifactId>
+            <version>1.8.8-R0.1-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 
     <build>
