@@ -20,7 +20,7 @@ public class PingCommand implements CommandExecutor {
         int totalPings = 0;
         int uniquePings = 0;
 
-        for(Collection<Integer> value : pingCounter.getPings().values()) {
+        for(Integer value : pingCounter.getPings().values()) {
             uniquePings++;
             totalPings += value;
         }
