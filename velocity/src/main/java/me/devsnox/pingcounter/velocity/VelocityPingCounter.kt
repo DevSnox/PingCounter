@@ -21,8 +21,7 @@ import me.devsnox.pingcounter.core.impl.BasicPingCounter
         authors = ["DevSnox"]
 )
 
-class VelocityPingCounter @Inject
-constructor(proxyServer: ProxyServer) {
+class VelocityPingCounter @Inject private constructor(proxyServer: ProxyServer) {
 
     init {
         val pingCounter = BasicPingCounter()
