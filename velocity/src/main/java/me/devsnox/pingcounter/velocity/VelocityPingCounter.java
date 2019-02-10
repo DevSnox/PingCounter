@@ -33,6 +33,6 @@ public class VelocityPingCounter {
         this.pingCounter = new BasicPingCounter();
 
         this.proxyServer.getCommandManager().register(new PingCommand(this.pingCounter.getStats()));
-        this.proxyServer.getEventManager().register(this.proxyServer, new PingListener(this.pingCounter.getEngine()));
+        this.proxyServer.getEventManager().register(this, new PingListener(this.pingCounter.getEngine()));
     }
 }
