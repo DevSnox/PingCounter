@@ -1,6 +1,6 @@
 name: PingCounter
 author: DevSnox
 version: "1.0-RELEASE"
-main: me.devsnox.pingcounter.PingCounter
+main: me.devsnox.pingcounter.spigot.SpigotPingCounter
 commands:
   pingcounter:
