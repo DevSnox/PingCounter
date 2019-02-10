@@ -5,7 +5,6 @@ import com.velocitypowered.api.plugin.Plugin;
 import com.velocitypowered.api.proxy.ProxyServer;
 import me.devsnox.pingcounter.core.api.PingCounter;
 import me.devsnox.pingcounter.core.impl.BasicPingCounter;
-import org.slf4j.Logger;
 
 /**
  * Created by DevSnox on 12.02.18
@@ -25,7 +24,7 @@ import org.slf4j.Logger;
 public class VelocityPingCounter {
 
     @Inject
-    public VelocityPingCounter(final ProxyServer proxyServer, final Logger logger) {
+    public VelocityPingCounter(final ProxyServer proxyServer) {
         final PingCounter pingCounter = new BasicPingCounter();
 
         proxyServer.getCommandManager().register(new PingCommand(pingCounter.getStats()));
