@@ -18,7 +18,7 @@ public class PingCommand implements CommandExecutor {
     @Override
     public boolean onCommand(final CommandSender sender, final Command command, final String label, final String[] args) {
         sender.sendMessage("§bUnique pings§8: §a" + this.pingStats.getUniquePings() + " §bTotal pings§8: §a" + this.pingStats.getTotalPings());
-        sender.sendMessage("§bAverage unique PPM§8: §a" + ((double) this.pingStats.getAverageUnqiePings(TimeUnit.MINUTES) + " §bAverage total PPM§8: §a" + ((double) this.pingStats.getAverageTotalPings(TimeUnit.MINUTES))));
+        sender.sendMessage("§bAverage unique PPM§8: §a" + ((double) this.pingStats.getAverageUniquePings(TimeUnit.MINUTES) + " §bAverage total PPM§8: §a" + ((double) this.pingStats.getAverageTotalPings(TimeUnit.MINUTES))));
         return false;
     }
 }
