@@ -7,10 +7,11 @@
     <groupId>me.devsnox</groupId>
     <artifactId>pingcounter</artifactId>
     <packaging>pom</packaging>
-    <version>1.1-RELEASE</version>
+    <version>1.2-RELEASE</version>
     <modules>
         <module>core</module>
         <module>spigot</module>
+        <module>velocity</module>
     </modules>
 
     <repositories>
@@ -21,11 +22,6 @@
     </repositories>
 
     <dependencies>
-        <dependency>
-            <groupId>org.github.paperspigot</groupId>
-            <artifactId>paperspigot-api</artifactId>
-            <version>1.8.8-R0.1-SNAPSHOT</version>
-        </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
@@ -45,4 +41,9 @@
             </plugin>
         </plugins>
     </build>
+
+    <properties>
+        <kotlin.code.style>official</kotlin.code.style>
+    </properties>
+
 </project>
