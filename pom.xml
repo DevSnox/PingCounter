@@ -7,7 +7,7 @@
     <groupId>me.devsnox</groupId>
     <artifactId>pingcounter</artifactId>
     <packaging>pom</packaging>
-    <version>1.2-SNAPSHOT</version>
+    <version>1.2-RELEASE</version>
     <modules>
         <module>core</module>
         <module>spigot</module>

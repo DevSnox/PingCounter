@@ -5,7 +5,7 @@
     <parent>
         <artifactId>pingcounter</artifactId>
         <groupId>me.devsnox</groupId>
-        <version>1.2-SNAPSHOT</version>
+        <version>1.2-RELEASE</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -26,7 +26,7 @@
         <dependency>
             <groupId>me.devsnox</groupId>
             <artifactId>pingcounter.core</artifactId>
-            <version>1.2-SNAPSHOT</version>
+            <version>1.2-RELEASE</version>
         </dependency>
         <dependency>
             <groupId>com.velocitypowered</groupId>
