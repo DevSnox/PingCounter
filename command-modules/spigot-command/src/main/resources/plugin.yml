@@ -1,0 +1,5 @@
+name: PingCounterCommand
+author: DevSnox
+version: 1.3-SNAPSHOT
+main: me.devsnox.pingcounter.command.spigot
+depend: PingCounterEngine

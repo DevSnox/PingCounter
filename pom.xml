@@ -9,9 +9,9 @@
     <packaging>pom</packaging>
     <version>1.3-SNAPSHOT</version>
     <modules>
-        <module>core</module>
-        <module>spigot</module>
-        <module>velocity</module>
+        <module>api</module>
+        <module>engine-modules</module>
+        <module>command-modules</module>
     </modules>
 
     <repositories>
